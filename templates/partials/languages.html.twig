@@ -1,5 +1,5 @@
 {% for option in language.allOptions(true) %}
     <a href="{{ option.path }}" class="btn flag w-100">
-        <img src="{{ asset('assets/images/flags/' ~ {{ option.flag }} ~ '.png') }}" alt="">
+        <img src="{{ asset('assets/images/flags/' ~ option.flag ~ '.png') }}" alt="">
     </a>
 {% endfor %}
