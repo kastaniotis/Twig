@@ -17,3 +17,8 @@ registration:
     passwordrequired: Passwords must not be Blank
     passwordrequiredlength: Passwords must be at least 6 characters long
     termsrequired: You need to accept the Terms
+
+login:
+  title: Login
+  label:
+    registration: Registration

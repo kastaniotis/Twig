@@ -1,7 +1,7 @@
 {% extends '@Iconic/full-screen-form.html.twig' %}
 
 {% block title %}
-    {{ parent() }} - Εγγραφή
+    {{ parent() }} - {{ 'registration.title' | trans }}
 {% endblock %}
 
 {% block form %}
@@ -9,6 +9,5 @@
     <a href="{{ path("app_login") }}" class="btn text-secondary btn-outline-primary w-100">
         {{ 'registration.label.login' | trans }}
     </a>
-    <hr>
     {% include('@Iconic/partials/languages.html.twig') %}
 {% endblock %}

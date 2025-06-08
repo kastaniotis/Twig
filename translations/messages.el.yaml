@@ -17,3 +17,8 @@ registration:
     passwordrequired: Ο Κωδικός δεν πρέπει να είναι κενός
     passwordrequiredlength: Οι Κωδικοί πρέπει να είναι τουλάχιστον 6 χαρακτήρες
     termsrequired: Πρέπει να αποδεχτείτε τους Όρους
+
+login:
+  title: Είσοδος
+  label:
+    registration: Εγγραφή

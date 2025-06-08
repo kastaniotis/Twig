@@ -1,0 +1,13 @@
+{% extends '@Iconic/full-screen-form.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - {{ 'login.title' | trans }}
+{% endblock %}
+
+{% block form %}
+    {{ form(form) }}
+    <a href="{{ path("app_register") }}" class="btn text-secondary btn-outline-primary w-100">
+        {{ 'login.label.registration' | trans }}
+    </a>
+    {% include('@Iconic/partials/languages.html.twig') %}
+{% endblock %}
