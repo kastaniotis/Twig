@@ -5,6 +5,6 @@
 
 {% for option in language.allOptions(true) %}
     <a href="{{ option.path }}" class="btn flag w-100">
-        <img src="{{ flagPath[option.path] }}" alt="Language flag: {{ option.path }}">
+        <img src="{{ flagPath[option.flag] }}" alt="Language flag: {{ option.flag }}">
     </a>
 {% endfor %}
