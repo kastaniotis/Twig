@@ -5,9 +5,37 @@
 {% endblock %}
 
 {% block form %}
-    {{ form(form) }}
-    <a href="{{ path("app_register") }}" class="btn text-secondary btn-outline-primary w-100">
-        {{ 'login.label.registration' | trans }}
-    </a>
+    <form method="post" class="card">
+            {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+
+            <input type="email" value="{{ last_username }}" name="_username" id="username" class="form-control"
+                   autocomplete="email" required autofocus placeholder="Email">
+
+            <input type="password" name="_password" id="password" class="form-control" autocomplete="current-password"
+                   required placeholder="Password">
+
+            <input type="hidden" name="_csrf_token"
+                   value="{{ csrf_token('authenticate') }}"
+            >
+
+            {#
+            Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+            See https://symfony.com/doc/current/security/remember_me.html
+
+            <div class="checkbox mb-3">
+                <input type="checkbox" name="_remember_me" id="_remember_me">
+                <label for="_remember_me">Remember me</label>
+            </div>
+            #}
+
+            <button class="btn btn-primary w-100 mb-1" type="submit">
+                {{ 'login.submit' | trans }}
+            </button>
+            <a href="{{ path("app_register") }}" class="btn w-100">
+                {{ 'login.register' | trans }}
+            </a>
+    </form>
     {% include('@Iconic/partials/languages.html.twig') %}
 {% endblock %}
