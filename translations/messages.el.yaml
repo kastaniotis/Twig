@@ -1,12 +1,18 @@
 registration:
   label:
     email: false
-    password: Κωδικός
-    passwordrepeat: Επανάληψη
+    password: false
+    passwordrepeat: false
     terms: Αποδοχή Όρων
     submit: Εγγραφή
     login: Σύνδεση
   placeholder:
-    email: false
+    email: Email
     password: Κωδικός
-    passwordrepeat: Επανάληψη
+    repeatpassword: Επανάληψη για Επαλήθευση
+  validation:
+    email: Λάθος μορφή Email
+    passwordmismatch: Οι κωδικοί δεν  είναι ίδιοι
+    passwordrequired: Ο Κωδικός δεν πρέπει να είναι κενός
+    passwordrequiredlength: Οι Κωδικοί πρέπει να είναι τουλάχιστον 6 χαρακτήρες
+    termsrequired: Πρέπει να αποδεχτείτε τους Όρους

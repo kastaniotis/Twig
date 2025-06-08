@@ -1,12 +1,18 @@
 registration:
   label:
     email: false
-    password: Password
-    passwordrepeat: Repeat
+    password: false
+    passwordrepeat: false
     terms: Accept Terms
     submit: Register
     login: Login
   placeholder:
-    email: false
+    email: Email
     password: Password
-    passwordrepeat: Repeat
+    repeatpassword: Repeat for Verification
+  validation:
+    email: Invalid Email
+    passwordmismatch: Passwords do not match
+    passwordrequired: Passwords must not be Blank
+    passwordrequiredlength: Passwords must be at least 6 characters long
+    termsrequired: You need to accept the Terms
