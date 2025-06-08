@@ -2,6 +2,8 @@
     'el': asset('assets/images/flags/el.png'),
     'fr': asset('assets/images/flags/en.png'),
 } %}
+
+{{ dump(flagPath) }}
 {% for option in language.allOptions(true) %}
     <a href="{{ option.path }}" class="btn flag w-100">
         <img src="{{ flagPath[option.path] }}" alt="">
