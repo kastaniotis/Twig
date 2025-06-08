@@ -1,10 +1,10 @@
-{% set flagPath = {
-    'el': asset('images/flags/el.png'),
-    'en': asset('images/flags/en.png'),
-} %}
+{#{% set flagPath = {#}
+{#    'el': asset('images/flags/el.png'),#}
+{#    'en': asset('images/flags/en.png'),#}
+{#} %}#}
 
 {% for option in language.allOptions(true) %}
-    <a href="{{ option.path }}" class="btn flag w-100">
-        <img src="{{ flagPath[option.flag] }}" alt="Language flag: {{ option.flag }}">
+    <a href="{{ option.path }}" class="btn flag w-100 mb-3">
+        <img src="{{ asset('images/flags/' ~ option.flag ~ '.png') }}" alt="Language flag: {{ option.flag }}">
     </a>
 {% endfor %}

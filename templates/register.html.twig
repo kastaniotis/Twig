@@ -6,8 +6,8 @@
 
 {% block form %}
     {{ form(registrationForm) }}
-    <a href="{{ path("app_login") }}" class="btn w-100">
-        {{ 'registration.login' | trans }}
+    <a href="{{ path("app_login") }}" class="btn text-secondary btn-outline-primary w-100">
+        {{ 'registration.label.login' | trans }}
     </a>
     <hr>
     {% include('@Iconic/partials/languages.html.twig') %}

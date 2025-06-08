@@ -1,0 +1,12 @@
+registration:
+  label:
+    email: false
+    password: Κωδικός
+    passwordrepeat: Επανάληψη
+    terms: Αποδοχή Όρων
+    submit: Εγγραφή
+    login: Σύνδεση
+  placeholder:
+    email: false
+    password: Κωδικός
+    passwordrepeat: Επανάληψη

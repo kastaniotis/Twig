@@ -1,0 +1,12 @@
+registration:
+  label:
+    email: false
+    password: Password
+    passwordrepeat: Repeat
+    terms: Accept Terms
+    submit: Register
+    login: Login
+  placeholder:
+    email: false
+    password: Password
+    passwordrepeat: Repeat
