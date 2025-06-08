@@ -1,0 +1,21 @@
+{
+    "name": "iconic/twig",
+    "description": "Reusable Twig Templates",
+    "type": "library",
+    "require": {
+        "twig/twig": "^3.21"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Iconic\\Twig\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dimitris Kastaniotis",
+            "email": "d.kastaniotis@iconic.gr"
+        }
+    ],
+    "minimum-stability": "stable"
+}

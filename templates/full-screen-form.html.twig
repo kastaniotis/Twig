@@ -1,0 +1,12 @@
+{% extends 'full-screen.html.twig' %}
+
+{% block body %}
+    <div class="card" style="width: 100%; max-width: 335px;">
+        <img src="{{ asset('images/logo-new.png') }}" class="card-img-top" alt="logo">
+        <div class="card-body pb-0">
+            {% block form %}
+
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

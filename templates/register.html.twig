@@ -1,0 +1,54 @@
+{% extends 'full-screen-form.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Εγγραφή
+{% endblock %}
+
+{% block form %}
+    {{ form(registrationForm) }}
+{% endblock %}
+
+{#{% block title %}{% endblock %}#}
+{##}
+{#{% block class %}login h-100{% endblock %}#}
+
+{#{% block body %}#}
+{#    {% for flash_error in app.flashes('verify_email_error') %}#}
+{#        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>#}
+{#    {% endfor %}#}
+{##}
+{#    {{ form_start(registrationForm, {'attr': {'class': 'card'}}) }}#}
+{##}
+{#    <div class="card-body">#}
+{#        {% for error in errors %}#}
+{#            <div class="alert alert-danger"> {{ error.message }}</div>#}
+{#        {% endfor %}#}
+{#        <input type="text"    name="{{ field_name(registrationForm.email) }}"#}
+{#                            value="{{ field_value(registrationForm.email) }}"#}
+{#                        placeholder="{{ 'registration.email' | trans }}"#}
+{#               class="form-control" required>#}
+
+{#        <input type="password"    name="{{ field_name(registrationForm.plainPassword) }}"#}
+{#                                value="{{ field_value(registrationForm.plainPassword) }}"#}
+{#                        placeholder="{{ 'registration.password' | trans }}"#}
+{#               class="form-control" required>#}
+
+{#        {{ form_widget(registrationForm.agreeTerms, {'label': 'registration.agree'}) }}#}
+
+{#        <button type="submit" class="btn btn-primary w-100 mt-3">{% trans %}registration.register{% endtrans %}</button>#}
+{#        <a href="{{ path("app_login") }}" class="btn w-100">#}
+{#            {{ 'registration.login' | trans }}#}
+{#        </a>#}
+{#        <hr>#}
+{#        {% for option in language.allOptions(true) %}#}
+{#            <div class="col-lg-1 pb-sm-3 pb-3 pb-lg-0 mx-auto">#}
+{#                <a href="{{ option.path }}" class="btn flag w-100">#}
+{#                    <img src="/images/flags/{{ option.flag }}.png" alt="">#}
+{#                </a>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    </div>#}
+{#    {{ form_end(registrationForm) }}#}
+{##}
+{##}
+{#{% endblock %}#}
