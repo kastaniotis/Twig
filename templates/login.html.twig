@@ -37,5 +37,5 @@
                 {{ 'login.register' | trans }}
             </a>
     </form>
-    {% include('@Iconic/partials/languages.html.twig') %}
+    {% include '@Iconic/partials/languages.html.twig' with {'linkclass': 'btn flag w-100 mb-2 mt-2'} %}
 {% endblock %}

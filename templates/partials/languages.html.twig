@@ -1,5 +1,15 @@
-{% for option in language.allOptions(true) %}
-    <a href="{{ option.path }}" class="btn flag w-100 mb-2 mt-2">
-        <img src="{{ asset('images/flags/' ~ option.flag ~ '.png') }}" alt="Language flag: {{ option.flag }}">
-    </a>
+{% for language in app.enabled_locales %}
+    {% if language != app.locale %}
+        {% set params = app.current_route_parameters|merge({'_locale': language}) %}
+        {% if tag is defined and class is defined %}
+            <{{ tag }} class="{{ class }}">
+        {% endif %}
+        <a href="{{ path(app.current_route, params) }}" class="{{ linkclass }}">
+            <img src="/images/flags/{{ language }}.png" alt=""
+                 style="height: 28px;">
+        </a>
+        {% if tag is defined and class is defined %}
+            </{{ tag }}>
+        {% endif %}
+    {% endif %}
 {% endfor %}

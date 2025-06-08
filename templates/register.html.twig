@@ -9,5 +9,5 @@
     <a href="{{ path("app_login") }}" class="btn text-secondary btn-outline-primary w-100">
         {{ 'registration.label.login' | trans }}
     </a>
-    {% include('@Iconic/partials/languages.html.twig') %}
+    {% include '@Iconic/partials/languages.html.twig' with {'linkclass': 'btn flag w-100 mb-2 mt-2'} %}
 {% endblock %}
