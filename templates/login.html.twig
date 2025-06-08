@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block form %}
-    <form method="post" class="card">
+    <form method="post" class="">
             {% if error %}
                 <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
             {% endif %}
@@ -30,10 +30,10 @@
             </div>
             #}
 
-            <button class="btn btn-primary w-100 mb-1" type="submit">
+            <button class="btn btn-primary w-100 mb-3" type="submit">
                 {{ 'login.submit' | trans }}
             </button>
-            <a href="{{ path("app_register") }}" class="btn w-100">
+            <a href="{{ path("app_register") }}" class="btn  text-secondary btn-outline-primary w-100">
                 {{ 'login.register' | trans }}
             </a>
     </form>
