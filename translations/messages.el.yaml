@@ -23,6 +23,7 @@ registration:
 email:
   verification:
     success: Η εγγραφή σας Ολοκληρώθηκε. Μπορείτε τώρα να συνδεθείτε.
+    failure: Η επιβεβαίωση Απέτυχε.
 
 login:
   title: Είσοδος
