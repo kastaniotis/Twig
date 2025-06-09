@@ -4,6 +4,9 @@
     <div class="card shadow" style="width: 100%; max-width: 335px;">
         <img src="{{ asset(logo) }}" class="card-img-top" alt="logo">
         <div class="card-body pb-0">
+            {% block form %}
+
+            {% endblock %}
             {% for label, messages in app.flashes %}
                 {% for message in messages %}
                     <div class="alert alert-{{ label == 'error' ? 'danger' : label }} alert-dismissible fade show" role="alert">
@@ -12,9 +15,6 @@
                     </div>
                 {% endfor %}
             {% endfor %}
-            {% block form %}
-
-            {% endblock %}
         </div>
     </div>
 {% endblock %}
