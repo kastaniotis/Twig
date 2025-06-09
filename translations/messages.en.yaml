@@ -17,6 +17,12 @@ registration:
     passwordrequired: Passwords must not be Blank
     passwordrequiredlength: Passwords must be at least 6 characters long
     termsrequired: You need to accept the Terms
+  confirmation:
+    success: The confirmation was Successful
+
+email:
+  verification:
+    success: Your registration is complete. You can login now.
 
 login:
   title: Login

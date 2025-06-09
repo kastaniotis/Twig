@@ -17,6 +17,12 @@ registration:
     passwordrequired: Ο Κωδικός δεν πρέπει να είναι κενός
     passwordrequiredlength: Οι Κωδικοί πρέπει να είναι τουλάχιστον 6 χαρακτήρες
     termsrequired: Πρέπει να αποδεχτείτε τους Όρους
+  confirmation:
+    success: Η εγγραφή σας είναι σχεδόν έτοιμη. Επιβεβαιώστε το email σας, πατώντας στο σύνδεσμο που σας στείλαμε.
+
+email:
+  verification:
+    success: Η εγγραφή σας Ολοκληρώθηκε. Μπορείτε τώρα να συνδεθείτε.
 
 login:
   title: Είσοδος
