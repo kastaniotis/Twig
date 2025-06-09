@@ -1,0 +1,7 @@
+registration:
+  validation:
+    email: Λάθος μορφή Email
+    passwordmismatch: Οι κωδικοί δεν  είναι ίδιοι
+    passwordrequired: Ο Κωδικός δεν πρέπει να είναι κενός
+    passwordrequiredlength: Οι Κωδικοί πρέπει να είναι τουλάχιστον 6 χαρακτήρες
+    termsrequired: Πρέπει να αποδεχτείτε τους Όρους
