@@ -12,7 +12,7 @@ registration:
     password: Password
     repeatpassword: Repeat for Verification
   confirmation:
-    success: Your account is almost read. Please check your email and click the link we sent you to verify your email address
+    success: Your account is almost ready. Please check your email and click the link we sent you to verify your email address
 
 email:
   verification:

@@ -3,7 +3,9 @@
     "description": "Reusable Twig Templates",
     "type": "library",
     "require": {
-        "twig/twig": "^3.21"
+        "twig/twig": "^3.21",
+        "league/commonmark": "^2.7",
+        "iconic/photography": "^0.1.1"
     },
     "license": "MIT",
     "autoload": {
