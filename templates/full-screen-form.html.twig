@@ -1,7 +1,7 @@
 {% extends '@Iconic/full-screen.html.twig' %}
 
 {% block body %}
-    <div class="card shadow p3" style="width: 100%; max-width: 335px;">
+    <div class="card shadow p-3" style="width: 100%; max-width: 335px;">
         <img src="{{ asset(logo) }}" class="card-img-top" alt="logo">
         <div class="card-body pb-0">
             {% for label, messages in app.flashes %}
